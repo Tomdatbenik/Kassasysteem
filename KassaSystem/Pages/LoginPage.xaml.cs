@@ -20,9 +20,14 @@ namespace KassaSystem.Pages
     /// </summary>
     public partial class LoginPage : Page
     {
-        public LoginPage()
+        public LoginPage(MainWindow main)
         {
             InitializeComponent();
+        }
+
+        private void BtLogin_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KassaSystem.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace KassaSystem
 {
     /// <summary>
@@ -23,6 +25,7 @@ namespace KassaSystem
         public MainWindow()
         {
             InitializeComponent();
+            this.MainFrame.Navigate(new LoginPage(this));
         }
     }
 }
