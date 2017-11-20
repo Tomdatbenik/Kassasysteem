@@ -9,7 +9,36 @@
       Title="Home" MinHeight="350" MinWidth="525" Background="White">
 
     <Grid>
-        <Frame x:Name="FActiescherm" Content="actiescherm" HorizontalAlignment="Left" Height="64" Margin="10,10,0,0" VerticalAlignment="Top" Width="148" Background="#FFEDEDED"/>
+        <Frame x:Name="FActionscreen" Content="actiescherm" HorizontalAlignment="Left" Height="64" Margin="10,10,0,0" VerticalAlignment="Top" Width="212" Background="#FFEDEDED"/>
+        <TextBox x:Name="TbInput" HorizontalAlignment="Left" Height="23" Margin="10,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175"/>
+        <StackPanel HorizontalAlignment="Left" Height="330" Margin="257,10,0,0" VerticalAlignment="Top" Width="258" Background="#FFEDEDED">
+
+
+        </StackPanel>
+        <Button Content="+" HorizontalAlignment="Left" Margin="189,92,0,0" VerticalAlignment="Top" Width="23" RenderTransformOrigin="0.702,0.63" Height="23"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="222,92,0,0" VerticalAlignment="Top" Width="23" RenderTransformOrigin="1.017,0.661" Height="23"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="10,129,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="8" HorizontalAlignment="Right" Margin="0,129,359.8,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="170,129,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="5" HorizontalAlignment="Right" Margin="0,160,359.8,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="170,160,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="2" HorizontalAlignment="Right" Margin="0,191,359.8,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="170,191,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="0" HorizontalAlignment="Right" Margin="0,222,359.8,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="," HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="Doorgaan" HorizontalAlignment="Left" Margin="170,222,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="Annuleren" HorizontalAlignment="Left" Margin="10,253,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="Terug" HorizontalAlignment="Left" Margin="90,253,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="Afronden" HorizontalAlignment="Left" Margin="170,253,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="Wisselgeld" HorizontalAlignment="Left" Margin="10,284,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="Zoeken" HorizontalAlignment="Left" Margin="90,284,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="Bezorgen" HorizontalAlignment="Left" Margin="170,284,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="Kortings pas" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button Content="Pin" HorizontalAlignment="Left" Margin="90,315,0,0" VerticalAlignment="Top" Width="75" Background="#FF78C703" Height="25"/>
+        <Button Content="Retour" HorizontalAlignment="Left" Margin="170,315,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+
 
     </Grid>
 </Page>
