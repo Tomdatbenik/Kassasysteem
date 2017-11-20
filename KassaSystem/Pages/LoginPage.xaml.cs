@@ -27,7 +27,7 @@ namespace KassaSystem.Pages
 
         private void BtLogin_Click(object sender, RoutedEventArgs e)
         {
-            
+            this.NavigationService.Navigate(new Uri("Pages/Home.xaml", UriKind.Relative));
         }
     }
 }
