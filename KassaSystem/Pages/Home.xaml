@@ -55,18 +55,18 @@
         <Button x:Name="Tb8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="23" Grid.Column="3" Grid.Row="5" Click="num_Click"/>
         <Button x:Name="Tb9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="23" Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="3" Margin="8.4,0,0,0" Click="num_Click"/>
         <Button x:Name="Tb4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="23" Grid.Column="1" Grid.Row="7" />
-        <Button x:Name="Tb5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="23" Grid.Column="3" Grid.Row="7" RenderTransformOrigin="0.502,0.529" Click="num_Click"/>
-        <Button x:Name="Tb6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="23" Grid.Column="4" Grid.Row="7" Grid.ColumnSpan="3" Click="num_Click"/>
-        <Button x:Name="Tb3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="67" Height="25" Grid.Column="1" Grid.Row="8" Grid.RowSpan="3" Click="num_Click"/>
-        <Button x:Name="Tb2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="25" Grid.Column="4" Grid.Row="8" Grid.ColumnSpan="3" Grid.RowSpan="3" Click="num_Click"/>
-        <Button x:Name="Tb1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="69" Height="24" Grid.Column="2" Grid.Row="8" Grid.ColumnSpan="3" Grid.RowSpan="2" Click="num_Click" />
-        <Button x:Name="Tb0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="2" Grid.Row="11" Grid.RowSpan="2" Grid.ColumnSpan="3" Click="num_Click" />
-        <Button Content="," HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="24" Grid.Column="1" Grid.Row="10" Grid.RowSpan="3" />
-        <Button Content="Doorgaan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="4" Grid.Row="10" Grid.RowSpan="3" Grid.ColumnSpan="6" />
-        <Button Content="Annuleren" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="1" Grid.Row="12" Grid.RowSpan="2" Grid.ColumnSpan="2" />
-        <Button Content="Terug" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="2" Grid.Row="12" Grid.RowSpan="2" Grid.ColumnSpan="3" />
-        <Button Content="Afronden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="4" Grid.Row="12" Grid.RowSpan="2" Grid.ColumnSpan="6" />
-        <Button Content="Wisselgeld" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="1" Grid.Row="15" Grid.RowSpan="2" Grid.ColumnSpan="2" />
+        <Button x:Name="Tb5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="23" Grid.Column="3" Grid.Row="7" Click="num_Click"/>
+        <Button x:Name="Tb6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="23" Grid.Column="5" Grid.Row="7" Grid.ColumnSpan="3" Click="num_Click"/>
+        <Button x:Name="Tb3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="67" Height="25" Grid.Column="1" Grid.Row="9" Grid.RowSpan="3" Click="num_Click"/>
+        <Button x:Name="Tb2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="25" Grid.Column="5" Grid.Row="9" Click="num_Click"/>
+        <Button x:Name="Tb1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="69" Height="24" Grid.Column="3" Grid.Row="9" Click="num_Click" />
+        <Button x:Name="Tb0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="3" Grid.Row="11" Click="num_Click" />
+        <Button Content="," HorizontalAlignment="Left" VerticalAlignment="Top" Width="72" Height="24" Grid.Column="1" Grid.Row="11" Grid.RowSpan="3" />
+        <Button Content="Doorgaan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="5" Grid.Row="11" />
+        <Button Content="Annuleren" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="1" Grid.Row="12" />
+        <Button Content="Terug" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="2" Grid.Row="12" />
+        <Button Content="Afronden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="4" Grid.Row="12" />
+        <Button Content="Wisselgeld" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="1" Grid.Row="15" />
         <Button Content="Zoeken" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="2" Grid.Row="15" Grid.RowSpan="2" Grid.ColumnSpan="3" />
         <Button Content="Bezorgen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="4" Grid.Row="15" Grid.RowSpan="2" Grid.ColumnSpan="6" />
         <Button Content="Kortings pas" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Grid.Column="1" Grid.Row="16" Grid.RowSpan="2" Grid.ColumnSpan="2" />
