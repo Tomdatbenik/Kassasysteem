@@ -7,6 +7,5 @@
         mc:Ignorable="d"
         Title="Login" MinHeight="350" MinWidth="525">
     <Grid>
-        <Frame Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

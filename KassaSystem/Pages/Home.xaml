@@ -6,9 +6,9 @@
       xmlns:local="clr-namespace:KassaSystem.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="250" d:DesignWidth="400"
-      Title="Home" MinHeight="250" MinWidth="400" Background="White" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+      Title="Home" MinHeight="250" MinWidth="400" Background="#FFF0EFEF" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
 
-    <Grid x:Name="KassaGrid" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  MinHeight="250" MinWidth="400" Background="#FFB92121" Margin="0,0,-0.2,0.4">
+    <Grid x:Name="KassaGrid" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  MinHeight="250" MinWidth="400">
         <Grid.RowDefinitions>
             <RowDefinition Height="10*"/>
             <RowDefinition Height="60*"/>
@@ -43,9 +43,9 @@
             <ColumnDefinition Width="194*"/>
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="FActionscreen" Content="Actiescherm" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="#FFEDEDED" NavigationUIVisibility="Hidden" Grid.ColumnSpan="7" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1"/>
+        <Frame x:Name="FActionscreen" Content="Actiescherm" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" NavigationUIVisibility="Hidden" Grid.ColumnSpan="7" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1"/>
         <TextBox x:Name="TbInput" HorizontalAlignment="stretch" TextWrapping="Wrap" Text="" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="1"/>
-        <StackPanel HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="#FFEDEDED" Grid.Column="9" Grid.Row="1" Grid.RowSpan="17"/>
+        <StackPanel HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" Grid.Column="9" Grid.Row="1" Grid.RowSpan="17"/>
 
         <Button Content="+" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="3"/>
         <Button Content="-" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="7" Grid.Row="3"/>
