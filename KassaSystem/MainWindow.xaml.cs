@@ -25,7 +25,7 @@ namespace KassaSystem
         public MainWindow()
         {
             InitializeComponent();
-            this.MainFrame.Navigate(new LoginPage(this));
+            this.Content = new LoginPage(this);
         }
     }
 }

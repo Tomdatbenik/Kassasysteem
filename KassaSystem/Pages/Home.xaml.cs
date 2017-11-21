@@ -30,6 +30,5 @@ namespace KassaSystem.Pages
             Button btn = sender as Button;
             TbInput.Text += btn.Content;
         }
-
     }
 }

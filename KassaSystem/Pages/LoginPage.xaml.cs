@@ -20,14 +20,16 @@ namespace KassaSystem.Pages
     /// </summary>
     public partial class LoginPage : Page
     {
+        MainWindow Main;
         public LoginPage(MainWindow main)
         {
             InitializeComponent();
+            this.Main = main;
         }
 
         private void BtLogin_Click(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri("Pages/Home.xaml", UriKind.Relative));
+            Main.Content = new Home();
         }
     }
 }
