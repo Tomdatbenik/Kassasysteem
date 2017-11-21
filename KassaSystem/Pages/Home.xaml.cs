@@ -27,7 +27,8 @@ namespace KassaSystem.Pages
 
         private void num_Click(object sender, RoutedEventArgs e)
         {
-            
+            Button btn = sender as Button;
+            TbInput.Text += btn.Content;
         }
 
     }
