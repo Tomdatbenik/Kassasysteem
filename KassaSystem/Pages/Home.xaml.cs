@@ -24,5 +24,11 @@ namespace KassaSystem.Pages
         {
             InitializeComponent();
         }
+
+        private void num_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
     }
 }
