@@ -25,6 +25,7 @@ namespace KassaSystem.Pages
         int i = 0;
         List<Product> PL = new List<Product>();
         BrushConverter bc = new BrushConverter();
+        //werkt
         public Home()
         {
             InitializeComponent();
