@@ -22,6 +22,7 @@ namespace KassaSystem.Pages
     public partial class Home : Page
     {
         bool A = true;
+        int i = 0;
         public Home()
         {
             InitializeComponent();
@@ -33,7 +34,6 @@ namespace KassaSystem.Pages
             TbInput.Text += btn.Content;
         }
 
-        int i = 0;
         BrushConverter bc = new BrushConverter();
         private void BtPlus_Click(object sender, RoutedEventArgs e)
         {
@@ -59,14 +59,23 @@ namespace KassaSystem.Pages
             {
                 // Populate list
                 this.LvArtikelen.View = gridView;
-                this.LvArtikelen.Items.Add(new Product(int.Parse(TbInput.Text), "artikel " + i, i));
+                if(TbInput.Text != "")
+                {
+                    this.LvArtikelen.Items.Add(new Product(int.Parse(TbInput.Text), "artikel " + i, 0));
+                    i++;
+                }
             }
             else
             {
                 // Populate list
                 this.LvRetour.View = gridView;
-                this.LvRetour.Items.Add(new Product(int.Parse(TbInput.Text), "artikel " + i, i));
+                if (TbInput.Text != "")
+                {
+                    this.LvRetour.Items.Add(new Product(int.Parse(TbInput.Text), "artikel " + i, 0));
+                    i++;
+                }
             }
+            TbInput.Text = "";
         }
 
         private void btRetour_Click(object sender, RoutedEventArgs e)
@@ -82,6 +91,13 @@ namespace KassaSystem.Pages
                 btRetour.Background = (Brush)bc.ConvertFrom("#FFDDDDDD");
                 A = true;
             }
+        }
+
+        private void btnpin_Click(object sender, RoutedEventArgs e)
+        {
+            this.LvRetour.Items.Clear();
+            this.LvArtikelen.Items.Clear();
+            TbInput.Text = "";
         }
     }
 }

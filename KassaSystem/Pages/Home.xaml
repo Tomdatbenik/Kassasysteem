@@ -48,9 +48,9 @@
         <Grid x:Name="SpList" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" Grid.Column="9" Grid.Row="1" Grid.RowSpan="17">
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"/>
-                <RowDefinition Height="10*"/>
+                <RowDefinition Height="20*"/>
                 <RowDefinition Height="5*"/>
-                <RowDefinition Height="10*"/>
+                <RowDefinition Height="20*"/>
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="5*"/>
@@ -93,7 +93,7 @@
         <Button Content="Zoeken" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="15"/>
         <Button Content="Bezorgen" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="15" Grid.ColumnSpan="3"/>
         <Button Content="Kortings pas" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="17" />
-        <Button x:Name="btnpin" Content="Pin" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="#FF78C703" Grid.Column="3" Grid.Row="17"/>
+        <Button x:Name="btnpin" Content="Pin" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="#FF78C703" Grid.Column="3" Grid.Row="17" Click="btnpin_Click"/>
         <Button x:Name="btRetour" Content="Retour" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="17" Grid.ColumnSpan="3" Click="btRetour_Click"/>
     </Grid>
 </Page>
