@@ -61,7 +61,7 @@ namespace KassaSystem.Pages
                 this.LvArtikelen.View = gridView;
                 if(TbInput.Text != "")
                 {
-                    this.LvArtikelen.Items.Add(new Product(int.Parse(TbInput.Text), "artikel " + i, 0));
+                    this.LvArtikelen.Items.Add(new Product(TbInput.Text, "artikel " + i, 0));
                     i++;
                 }
             }
@@ -71,7 +71,7 @@ namespace KassaSystem.Pages
                 this.LvRetour.View = gridView;
                 if (TbInput.Text != "")
                 {
-                    this.LvRetour.Items.Add(new Product(int.Parse(TbInput.Text), "artikel " + i, 0));
+                    this.LvRetour.Items.Add(new Product(TbInput.Text, "artikel " + i, 0));
                     i++;
                 }
             }

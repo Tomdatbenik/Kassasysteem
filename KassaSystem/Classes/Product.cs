@@ -8,11 +8,11 @@ namespace KassaSystem.Classes
 {
     class Product
     {
-        public int PBarcode { get; }
+        public string PBarcode { get; }
         public string POmschrijving { get; }
         public int PPrijs { get; }
 
-        public Product(int barcode, string omschrijving, int prijs)
+        public Product(string barcode, string omschrijving, int prijs)
         {
             this.PBarcode = barcode;
             this.POmschrijving = omschrijving;
