@@ -23,6 +23,7 @@ namespace KassaSystem.Pages
     {
         bool A = true;
         int i = 0;
+        List<Product> PL = new List<Product>();
         public Home()
         {
             InitializeComponent();
@@ -55,14 +56,22 @@ namespace KassaSystem.Pages
                 DisplayMemberBinding = new Binding("PPrijs")
             });
 
+
+            //RON KIJK HIERNAAR HIERMEE MOET HET JE WEL LUKKEN SCHATJEEE VAN GULLIE MAM
+            Product p = new Product(TbInput.Text, "artikel " + i, i);
+            PL.Add(p);
+
+            i++;
+            TbInput.Text = "";
+
             if (A == true)
             {
                 // Populate list
                 this.LvArtikelen.View = gridView;
                 if(TbInput.Text != "")
                 {
-                    this.LvArtikelen.Items.Add(new Product(TbInput.Text, "artikel " + i, 0));
-                    i++;
+                    this.LvArtikelen.Items.Add(p));
+                    
                 }
             }
             else
@@ -71,11 +80,9 @@ namespace KassaSystem.Pages
                 this.LvRetour.View = gridView;
                 if (TbInput.Text != "")
                 {
-                    this.LvRetour.Items.Add(new Product(TbInput.Text, "artikel " + i, 0));
-                    i++;
+                    this.LvRetour.Items.Add(p));
                 }
             }
-            TbInput.Text = "";
         }
 
         private void btRetour_Click(object sender, RoutedEventArgs e)
@@ -98,6 +105,11 @@ namespace KassaSystem.Pages
             this.LvRetour.Items.Clear();
             this.LvArtikelen.Items.Clear();
             TbInput.Text = "";
+        }
+
+        public void GetZeMoneys()
+        {
+
         }
     }
 }
