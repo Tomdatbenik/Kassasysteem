@@ -45,10 +45,35 @@
         </Grid.ColumnDefinitions>
         <Frame x:Name="FActionscreen" Content="Actiescherm" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" NavigationUIVisibility="Hidden" Grid.ColumnSpan="7" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1"/>
         <TextBox x:Name="TbInput" HorizontalAlignment="stretch" TextWrapping="Wrap" Text="" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="1"/>
-        <StackPanel HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" Grid.Column="9" Grid.Row="1" Grid.RowSpan="17"/>
+        <Grid x:Name="SpList" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" Grid.Column="9" Grid.Row="1" Grid.RowSpan="17">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Artikelen:" ></TextBlock>
+            <ListView x:Name="LvArtikelen" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="75"></ListView>
+            <TextBlock Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Retour:" ></TextBlock>
+            <ListView x:Name="LvRetour" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="75"></ListView>
+            <TextBlock Grid.Row="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Retour:" ></TextBlock>
+            <TextBlock Grid.Row="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Artikelen:" ></TextBlock>
+            <TextBlock Grid.Row="6" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="BTW:" ></TextBlock>
+            <TextBlock Grid.Row="7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Korting:"  ></TextBlock>
+            <TextBlock Grid.Row="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Te Betalen:"  ></TextBlock>
+            <TextBlock Grid.Row="9" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Gegeven:"  ></TextBlock>
+            <TextBlock Grid.Row="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Wisselgeld:"  ></TextBlock>
+        </Grid>
 
-        <Button Content="+" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="3"/>
-        <Button Content="-" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="7" Grid.Row="3"/>
+        <Button x:Name="BtPlus" Content="+" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="3" Click="BtPlus_Click"/>
+        <Button x:Name="BtMin" Content="-" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="7" Grid.Row="3"/>
         <Button x:Name="Tb7" Content="7" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="5" Click="num_Click"/>
         <Button x:Name="Tb8" Content="8" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="5" Click="num_Click"/>
         <Button x:Name="Tb9" Content="9" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="5" Click="num_Click" Grid.ColumnSpan="3" />
@@ -68,7 +93,7 @@
         <Button Content="Zoeken" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="15"/>
         <Button Content="Bezorgen" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="15" Grid.ColumnSpan="3"/>
         <Button Content="Kortings pas" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="17" />
-        <Button Content="Pin" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="#FF78C703" Grid.Column="3" Grid.Row="17"/>
-        <Button Content="Retour" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="17" Grid.ColumnSpan="3"/>
+        <Button x:Name="btnpin" Content="Pin" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="#FF78C703" Grid.Column="3" Grid.Row="17"/>
+        <Button x:Name="btRetour" Content="Retour" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="17" Grid.ColumnSpan="3" Click="btRetour_Click"/>
     </Grid>
 </Page>
