@@ -58,6 +58,7 @@ namespace KassaSystem.Pages
 
 
             //RON KIJK HIERNAAR HIERMEE MOET HET JE WEL LUKKEN SCHATJEEE VAN GULLIE MAM
+            //gvd ron
             Product p = new Product(TbInput.Text, "artikel " + i, i);
             PL.Add(p);
 
