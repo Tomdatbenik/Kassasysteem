@@ -24,6 +24,7 @@ namespace KassaSystem.Pages
         bool A = true;
         int i = 0;
         List<Product> PL = new List<Product>();
+        BrushConverter bc = new BrushConverter();
         public Home()
         {
             InitializeComponent();
@@ -33,57 +34,6 @@ namespace KassaSystem.Pages
         {
             Button btn = sender as Button;
             TbInput.Text += btn.Content;
-        }
-
-        BrushConverter bc = new BrushConverter();
-        private void BtPlus_Click(object sender, RoutedEventArgs e)
-        {
-            // Add columns
-            var gridView = new GridView();
-            gridView.Columns.Add(new GridViewColumn
-            {
-                Header = "Barcode",
-                DisplayMemberBinding = new Binding("PBarcode")
-            });
-            gridView.Columns.Add(new GridViewColumn
-            {
-                Header = "Omschrijving",
-                DisplayMemberBinding = new Binding("POmschrijving")
-            });
-            gridView.Columns.Add(new GridViewColumn
-            {
-                Header = "Prijs",
-                DisplayMemberBinding = new Binding("PPrijs")
-            });
-
-
-            //RON KIJK HIERNAAR HIERMEE MOET HET JE WEL LUKKEN SCHATJEEE VAN GULLIE MAM
-            //gvd ron
-            Product p = new Product(TbInput.Text, "artikel " + i, i);
-            PL.Add(p);
-
-            i++;
-            TbInput.Text = "";
-
-            if (A == true)
-            {
-                // Populate list
-                this.LvArtikelen.View = gridView;
-                if(TbInput.Text != "")
-                {
-                    this.LvArtikelen.Items.Add(p));
-                    
-                }
-            }
-            else
-            {
-                // Populate list
-                this.LvRetour.View = gridView;
-                if (TbInput.Text != "")
-                {
-                    this.LvRetour.Items.Add(p));
-                }
-            }
         }
 
         private void btRetour_Click(object sender, RoutedEventArgs e)
@@ -111,6 +61,53 @@ namespace KassaSystem.Pages
         public void GetZeMoneys()
         {
 
+        }
+
+        private void btdoorgaan_Click(object sender, RoutedEventArgs e)
+        {
+            // Add columns
+            var gridView = new GridView();
+            gridView.Columns.Add(new GridViewColumn
+            {
+                Header = "Barcode",
+                DisplayMemberBinding = new Binding("PBarcode")
+            });
+            gridView.Columns.Add(new GridViewColumn
+            {
+                Header = "Omschrijving",
+                DisplayMemberBinding = new Binding("POmschrijving")
+            });
+            gridView.Columns.Add(new GridViewColumn
+            {
+                Header = "Prijs",
+                DisplayMemberBinding = new Binding("PPrijs")
+            });
+
+            Product p = new Product(TbInput.Text, "artikel " + i, i);
+            PL.Add(p);
+
+            i++;
+
+            if (A == true)
+            {
+                // Populate list
+                this.LvArtikelen.View = gridView;
+                if (TbInput.Text != "")
+                {
+                    this.LvArtikelen.Items.Add(p);
+
+                }
+            }
+            else
+            {
+                // Populate list
+                this.LvRetour.View = gridView;
+                if (TbInput.Text != "")
+                {
+                    this.LvRetour.Items.Add(p);
+                }
+            }
+            TbInput.Text = "";
         }
     }
 }

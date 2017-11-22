@@ -36,16 +36,14 @@
             <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="54*"/>
             <ColumnDefinition Width="7*"/>
-            <ColumnDefinition Width="20*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="50*"/>
             <ColumnDefinition Width="15*"/>
             <ColumnDefinition Width="194*"/>
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="FActionscreen" Content="Actiescherm" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" NavigationUIVisibility="Hidden" Grid.ColumnSpan="7" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1"/>
-        <TextBox x:Name="TbInput" HorizontalAlignment="stretch" TextWrapping="Wrap" Text="" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="1"/>
-        <Grid x:Name="SpList" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" Grid.Column="9" Grid.Row="1" Grid.RowSpan="17">
+        <Frame x:Name="FActionscreen" Content="Actiescherm" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" NavigationUIVisibility="Hidden" Grid.ColumnSpan="7" Grid.RowSpan="3" Margin="7,6,14.8,12.4"/>
+        <TextBox x:Name="TbInput" HorizontalAlignment="stretch" TextWrapping="Wrap" Text="" VerticalAlignment="stretch" Grid.Row="2" Grid.ColumnSpan="6" Grid.RowSpan="2" Margin="7,12.4,0,0.2"/>
+        <Grid x:Name="SpList" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" Grid.Column="7" Grid.RowSpan="18" Margin="0.2,6,0.4,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="20*"/>
@@ -71,29 +69,26 @@
             <TextBlock Grid.Row="9" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Gegeven:"  ></TextBlock>
             <TextBlock Grid.Row="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Text="Wisselgeld:"  ></TextBlock>
         </Grid>
-
-        <Button x:Name="BtPlus" Content="+" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="3" Click="BtPlus_Click"/>
-        <Button x:Name="BtMin" Content="-" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="7" Grid.Row="3"/>
-        <Button x:Name="Tb7" Content="7" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="5" Click="num_Click"/>
+        <Button x:Name="Tb7" Content="7" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Row="5" Grid.Column="1" Click="num_Click"  />
         <Button x:Name="Tb8" Content="8" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="5" Click="num_Click"/>
-        <Button x:Name="Tb9" Content="9" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="5" Click="num_Click" Grid.ColumnSpan="3" />
-        <Button x:Name="Tb4" Content="4" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="7" Click="num_Click"/>
-        <Button x:Name="Tb5" Content="5" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="7" Click="num_Click"/>
-        <Button x:Name="Tb6" Content="6" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="7" Click="num_Click" Grid.ColumnSpan="3"/>
-        <Button x:Name="Tb3" Content="3" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="9" Grid.ColumnSpan="3" Click="num_Click"/>
-        <Button x:Name="Tb2" Content="2" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="9" Click="num_Click" />
-        <Button x:Name="Tb1" Content="1" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1 " Grid.Row="9" Click="num_Click" />
-        <Button x:Name="Tb0" Content="0" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="11" Click="num_Click" />
-        <Button Content="," HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="11"/>
-        <Button Content="Doorgaan" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="5" Grid.Row="11" Grid.ColumnSpan="3"/>
-        <Button Content="Annuleren" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="13"/>
+        <Button x:Name="Tb9" Content="9" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="5" Click="num_Click"/>
+        <Button x:Name="Tb4" Content="4" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Row="7" Grid.Column="1" Click="num_Click"/>
+        <Button x:Name="Tb5" Content="5" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="7" Click="num_Click" />
+        <Button x:Name="Tb6" Content="6" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="7" Click="num_Click" />
+        <Button x:Name="Tb3" Content="3" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="9" Click="num_Click"/>
+        <Button x:Name="Tb2" Content="2" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="9" Click="num_Click"/>
+        <Button x:Name="Tb1" Content="1" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="9" Click="num_Click"  />
+        <Button x:Name="Tb0" Content="0" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="11" Click="num_Click"/>
+        <Button Content="," HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Row="11" Grid.Column="1"/>
+        <Button x:Name="btdoorgaan" Content="Doorgaan" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="5" Grid.Row="11" Click="btdoorgaan_Click"/>
+        <Button Content="Annuleren" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Row="13" Grid.Column="1"/>
         <Button Content="Terug" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="13"/>
-        <Button Content="Afronden" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="13" Grid.ColumnSpan="3"/>
-        <Button Content="Wisselgeld" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="15"/>
+        <Button Content="Afronden" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="13"/>
+        <Button Content="Wisselgeld" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Row="15"  Grid.Column="1"/>
         <Button Content="Zoeken" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="3" Grid.Row="15"/>
-        <Button Content="Bezorgen" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="15" Grid.ColumnSpan="3"/>
-        <Button Content="Kortings pas" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="17" />
-        <Button x:Name="btnpin" Content="Pin" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="#FF78C703" Grid.Column="3" Grid.Row="17" Click="btnpin_Click"/>
-        <Button x:Name="btRetour" Content="Retour" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="17" Grid.ColumnSpan="3" Click="btRetour_Click"/>
+        <Button Content="Bezorgen" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="15" />
+        <Button Content="Kortings pas" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Row="17" Grid.Column="1"/>
+        <Button x:Name="btnpin" Content="Pin" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="#FF78C703" Grid.Column="3" Grid.Row="17" Click="btnpin_Click" />
+        <Button x:Name="btRetour" Content="Retour" HorizontalAlignment="stretch" VerticalAlignment="stretch" Grid.Column="5" Grid.Row="17"  Click="btRetour_Click" />
     </Grid>
 </Page>
