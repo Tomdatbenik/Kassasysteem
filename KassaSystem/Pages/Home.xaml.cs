@@ -40,7 +40,7 @@ namespace KassaSystem.Pages
         private void btRetour_Click(object sender, RoutedEventArgs e)
         {
 
-            if(A == true)
+            if (A == true)
             {
                 btRetour.Background = Brushes.Green;
                 A = false;
@@ -88,14 +88,21 @@ namespace KassaSystem.Pages
             PL.Add(p);
 
             i++;
-
+            int artikeltotaal = 0;
+            int retourtotaal = 0;
             if (A == true)
             {
                 // Populate list
                 this.LvArtikelen.View = gridView;
                 if (TbInput.Text != "")
                 {
+
                     this.LvArtikelen.Items.Add(p);
+                    foreach (Product q in PL)
+                    {
+                        artikeltotaal += q.PPrijs;
+                    }
+                    tbArtikelen.Text = "Artikelen: €" + artikeltotaal;
 
                 }
             }
@@ -106,9 +113,24 @@ namespace KassaSystem.Pages
                 if (TbInput.Text != "")
                 {
                     this.LvRetour.Items.Add(p);
+                    foreach (Product q in PL)
+                    {
+                        retourtotaal += q.PPrijs;
+                    }
+                    tbRetour.Text = "Retour: €" + retourtotaal;
                 }
             }
             TbInput.Text = "";
+            int totaal = artikeltotaal - retourtotaal;
+            tbBetalen.Text = "Te betalen: €" + totaal;
+        }
+
+        private void TbInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                btdoorgaan_Click(null, null);
+            }
         }
     }
 }
