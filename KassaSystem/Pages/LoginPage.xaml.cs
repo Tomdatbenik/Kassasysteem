@@ -29,6 +29,7 @@ namespace KassaSystem.Pages
 
         private void BtLogin_Click(object sender, RoutedEventArgs e)
         {
+
             Main.Content = new Home();
         }
     }

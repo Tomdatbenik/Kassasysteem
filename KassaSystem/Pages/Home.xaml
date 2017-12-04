@@ -41,7 +41,7 @@
             <ColumnDefinition Width="210*"/>
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
-        <Frame x:Name="FActionscreen" Content="Actiescherm" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" NavigationUIVisibility="Hidden" Grid.ColumnSpan="7" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1"/>
+        <Frame x:Name="FActionscreen" Content="Scan producten" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" NavigationUIVisibility="Hidden" Grid.ColumnSpan="5" Grid.RowSpan="1" Grid.Column="1" Grid.Row="1"/>
         <TextBox x:Name="TbInput" HorizontalAlignment="stretch" TextWrapping="Wrap" Text="" VerticalAlignment="stretch" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Grid.RowSpan="1" KeyDown="TbInput_KeyDown"/>
         <Grid x:Name="SpList" HorizontalAlignment="stretch" VerticalAlignment="stretch" Background="White" Grid.Column="7" Grid.Row="1" Grid.RowSpan="17">
             <Grid.RowDefinitions>

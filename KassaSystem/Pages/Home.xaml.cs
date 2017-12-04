@@ -43,11 +43,14 @@ namespace KassaSystem.Pages
             if (A == true)
             {
                 btRetour.Background = Brushes.Green;
+                FActionscreen.Content = "Scan producten om te retouneren";
                 A = false;
+
             }
             else
             {
                 btRetour.Background = (Brush)bc.ConvertFrom("#FFDDDDDD");
+                FActionscreen.Content = "Scan producten";
                 A = true;
             }
         }
