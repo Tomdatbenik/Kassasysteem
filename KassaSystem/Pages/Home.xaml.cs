@@ -21,6 +21,7 @@ namespace KassaSystem.Pages
     /// </summary>
     public partial class Home : Page
     {
+        database db = new database();
         bool A = true;
         int i = 0;
         List<Product> PL = new List<Product>();
