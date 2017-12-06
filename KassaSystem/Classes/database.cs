@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace KassaSystem.Classes
 {
-    public class database
+    public class Database
     {
         public MySqlConnection Con;
 
