@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace KassaSystem.Classes
 {
     public class Database
@@ -22,7 +23,7 @@ namespace KassaSystem.Classes
         public void Connect()
         {
             //this.Con = new MySqlConnection("Server=localhost;Database=ekwc;Uid=root;Pwd=;");
-            this.Con = new MySqlConnection("Server=81.207.39.183;Database=snellewiel;Uid=TeamAO;Pwd=teamao1;");
+            this.Con = new MySqlConnection("Server=81.207.39.183;Database=kassasysteem;Uid=TeamAO;Pwd=teamao1;");
             this.Con.Open();
         }
 
