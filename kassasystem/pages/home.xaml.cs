@@ -44,20 +44,21 @@ namespace KassaSystem.Pages
             if (A == true)
             {
                 btRetour.Background = Brushes.Green;
-                FActionscreen.Content = "Scan producten om te retouneren";
+                FActionscreen.Content = "Scan de retouren";
                 A = false;
 
             }
             else
             {
                 btRetour.Background = (Brush)bc.ConvertFrom("#FFDDDDDD");
-                FActionscreen.Content = "Scan producten";
+                FActionscreen.Content = "Scan de artikelen";
                 A = true;
             }
         }
 
         private void btnpin_Click(object sender, RoutedEventArgs e)
         {
+            FActionscreen.Content = "Wacht tot de betaling gereed is";
             this.LvRetour.Items.Clear();
             this.LvArtikelen.Items.Clear();
             TbInput.Text = "";

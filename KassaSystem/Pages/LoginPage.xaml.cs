@@ -42,15 +42,23 @@ namespace KassaSystem.Pages
             DataTable dt = db.ExecuteStringQuery("SELECT password FROM gebruikers WHERE username LIKE '" + TbNaam.Text + "'");
             string sPassword = dt.Rows[0].Field<string>(0);
 
-            if (PbPass.Password == sPassword) 
+            if (BCrypt.CheckPassword(PbPass.Password, sPassword)) 
             {
                 MessageBox.Show("U bent ingelogd");
                 Main.Content = new Home();
             }
             else
             {
-                MessageBox.Show("Verkeerd wachtwoord");
+                MessageBox.Show("Gebruikersnaam of wachtwoord onjuist");
             }      
+        }
+
+        private void PbPass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                BtLogin_Click(this, new RoutedEventArgs());
+            }
         }
     }
 }

@@ -13,7 +13,7 @@
             <TextBlock Text="Naam:" Width="200" Height="17.6"></TextBlock>
             <TextBox x:Name="TbNaam" Width="200" Height="17.6"></TextBox>
             <TextBlock Text="Wachtwoord:" Width="200" Height="17.6"></TextBlock>
-            <PasswordBox x:Name="PbPass" Width="200" PasswordChar="*"></PasswordBox>
+            <PasswordBox x:Name="PbPass" Width="200" PasswordChar="*" KeyDown="PbPass_KeyDown"></PasswordBox>
             <Button x:Name="BtLogin" Width="200" Height="20" Content="login" Margin="50,10" Click="BtLogin_Click"/>
         </StackPanel>
     </Grid>
