@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KassaSystem.Classes
+namespace ExactWpf.Classes
 {
     class Product
     {
